@@ -14,3 +14,4 @@
 - Run `npm start`
 - User needs to subsribe to the facebook app in order for us to receive their webhook data.
 - The client side is able to filter and search for specific field. Eg. Enter `id=<user id>` in the search bar will find you the data that has the user id of `<user id>`. Search bar also allows for searching of user id containing `<user id>`. Simply, enter user id that wants to be searched onto the search bar. Lastly, filter of fields that should be rendered is also available in toggle format. 
+- Once the server side is set up, hook the client side to the specifi url of the server in `data.js`.
