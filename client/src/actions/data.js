@@ -41,7 +41,7 @@ export function load() {
 	return function(dispatch, getState) {
 		let searchQuery = getSearchQuery(getState());
 		console.log(searchQuery);
-		return fetch('<server url>'+searchQuery)
+		return fetch('<server url>/userInteraction?'+searchQuery)
 		.then(async (response) => {
 			let res = await response.json();
 			dispatch(receivedData(res));
